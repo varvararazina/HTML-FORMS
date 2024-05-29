@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Глава 1. INPUT и TEXTAREA </h2>
+    <form action="index.html" method="post">
+        <input type="text" placeholder="Плейсхолдер">
+        <input type="text" value="value">
+        <input type="text" disabled value="disabled">
+        <input type="password">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        <input type="button" value="Кнопка через input">
+        <button>Кнопка через button</button>
+    </form>
+    <hr>
+    <h2>Глава 2. INPUT и LABEL</h2>
+    <form action="index.html">
+        <input type="text" id="input" placeholder="Плейсхолдер">
+        <label for="input">Жми</label>
+        <input type="submit">
+    </form>
+    <hr>
+    <h2>Глава 3. CHECKBOX и RADIO</h2>
+    <form action="index.html">
+        <input type="checkbox" name="" id="" >
+        <input type="checkbox" name="" id="" checked>
+        <input type="checkbox" name="" id="" disabled>
+        <div class="radio">
+            Это радио группа радиокнопок, только одна отмечана.
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2" >
+        </div>
+    </form>
+    <hr>
+    <h2>Глава 4. SELECT</h2>
+    <form action="index.html">
+        <section>
+            <select name="" id="">
+                <option>Нью-Йорк</option>
+            </select>
+            <select name="" id="">
+                <option>Москва</option>
+                <option>Киев</option>
+                <option>Нью-Йорк</option>
+            </select>
+            <select name="" id="">
+                <option>Нью-Йорк</option>
+                <option>Минск</option>
+                <option>Киев</option>
+                <option>Москва</option>
+                <option>Варшава</option>
+            </select>
+        </section>
+    </form>
+    <hr>
+    <h2>Глава 4. FILE</h2>
+    <form action="index.html">
+        <input type="file">
+        <input type="submit">
+    </form>
+    <hr>
+    <h2>Глава 4. FIELDSET и LEGEND</h2>
+    <form action="index.html" id="form">
+        <fieldset>
+            <legend>Выберите кнопочку</legend>
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2" >
+            <input type="radio" name="radio" id="radio3" >
+            <input type="text" placeholder="Ваше имя">
+        </fieldset>
+        <fieldset>
+            <legend>Выберите кнопочку</legend>
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2" >
+            <input type="radio" name="radio" id="radio3" >
+        </fieldset>
+        <input type="submit">
+    </form>
+    <style>
+        form {  
+            max-width: max-content;
+            display: flex;
+            flex-direction: column;
+        }
+        .radio {
+            display: flex;
+            flex-direction: column;
+            border:1px solid black;
+        }
+        #form {
+            border: 1px solid black;
+        }
+    </style>
+</body>
+</html>
